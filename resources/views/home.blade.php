@@ -11,17 +11,20 @@
 
     @include('partials.header')
 
-    <div id="main">
+<div id="main">
     <div class="jumbotron">
         <h3 class="current-series-ad p-2 text-white">
-                Current Series
+            Current Series
         </h3>
     </div>
     <div class="container-fluid titles p-4">
-        <div class="row">
+        <div class="current-series row">
+            <div class="col-2 p-4">
                 @foreach($comics as $comic)
-                    <h1>{{$comic['price']}}</h1>
+                    <img src="{{$comic['thumb']}}" alt="">
+                    <p>{{$comic['title']}}</p>
                 @endforeach
+            </div>
         </div>
     </div>
 </div>
