@@ -1,3 +1,150 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
 
 
+:root{
+    --main-blue: #0282f9;
+    --main-gray: #303030;
+    --dark-gray: #1c1c1c;
+    --light-gray: #949494;
+    --white: #ffffff;
+    --black: #000000;
+  }
+  
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  img{
+    max-width: 100%;
+  }
+  
+  .section{
+  
+    width: 70vw;
+    height: auto;
+  
+    .linkWrapper{
+      padding: 0 0.5rem;
+      height: 100%;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+  
+      a{
+        color: black;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: small;
+      }
+  
+      a:hover{
+        color: var(--main-blue);
+      }
+    }
+  
+    .linkWrapper:hover{
+      border-bottom: 5px solid var(--main-blue);
+    }
+  }
+  
+  .storeLinks{
+    background-color: var(--main-blue);
+      a{
+        color: white;
+        text-decoration: none;
+        padding: 0 1rem;
+        font-size: small;
+      }
+      img{
+        width: 35%;
+      }
+  }
+  
+  #footer{
+    background-image: url(./assets/img/footer-bg.jpg);
+  
+    ul{
+      color: white;
+      list-style-type: none;
+      li{
+        a{
+          color: var(--light-gray);
+          text-decoration: none;
+        }
+      }
+    }
+  
+    .dcBackground{
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      img{
+        transform: translateY(-20%);
+        position: absolute;
+        width: 80%;
+        aspect-ratio: 1/1;   
+        overflow: hidden;
+      }
+    }
+  }
+  
+  #socials{
+    background-color: var(--main-gray);
+  
+    .signUpNowWrapper{
+      button{
+        border: 3px solid var(--main-blue);
+        background-color: var(--main-gray);
+        color: var(--white);
+        padding: 0.5rem;
+        text-transform: uppercase;
+      }
+    }
+  
+    .socialsWrapper{
+      a{
+        padding: 0 1rem;
+        color: var(--main-blue);
+        text-decoration: none;
+      }
+  
+    }
+  }
+  
+  #main{
+  
+    
+  
+    .jumbotron{
+      position: relative;
+      background-image: url(./assets/img/jumbotron.jpg);
+      background-color: var(--light-gray);
+      background-position: center 30%;
+      background-repeat: no-repeat;
+      height: 50vh;
+    }
+  
+    .current-series-ad{
+      position: absolute;
+      background-color: var(--main-blue);
+      bottom: -30px;
+      margin-left: 10%;
+    }
+  
+    .titles{
+      background-color: var(--dark-gray);
+      .current-series{
+  
+        .col-2{
+          
+          p{
+            color: var(--white);
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+    
+  }

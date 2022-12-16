@@ -11,9 +11,22 @@
 
     @include('partials.header')
 
-    <h1 class="text-muted">
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaa
-    </h1>
+    <div id="main">
+    <div class="jumbotron">
+        <h3 class="current-series-ad p-2 text-white">
+                Current Series
+        </h3>
+    </div>
+    <div class="container-fluid titles p-4">
+        <div class="row">
+                @foreach($comics as $comic)
+                    <h1>{{$comic['price']}}</h1>
+                @endforeach
+        </div>
+    </div>
+</div>
+
+    @include('partials.storeLinks')
 
     @include('partials.footer')
 
